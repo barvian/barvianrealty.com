@@ -1,0 +1,193 @@
+.dropdown {
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #dbdbdb;
+    color: #5d5d5d;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 15px;
+    position: relative;
+    text-align: left;
+    width: 75px;
+}
+.dropdown.open{
+    position: absolute;
+    z-index:9000;
+}
+.dropdown .old {
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.dropdown .selected:after {
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+}
+.dropdown .carat {
+    background: url("/static/images/bg-select.png") no-repeat scroll 0 -111px rgba(0, 0, 0, 0);
+    height: 26px;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    width: 28px;
+}
+.dropdown, .dropdown div, .dropdown li, .dropdown div:after {
+    transition: all 150ms ease-in-out 0s;
+}
+.dropdown ul {
+    height: 100%;
+    left: 0;
+    list-style: outside none none;
+    overflow: auto;
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding:0;
+    margin:0
+}
+.dropdown li {
+    display: block;
+}
+
+.dropdown li {
+    border-bottom: 1px dotted #d4d4d4;
+    list-style: outside none none;
+    padding: 8px 12px;
+}
+.dropdown li.active {
+    font-weight: 700;
+}
+.dropdown div {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #ffffff;
+    border-color: #eee #ccc #ccc;
+    border-image: none;
+    border-right: 1px solid #ccc;
+    border-style: solid;
+    border-width: 0;
+    height: 0;
+    left: -1px;
+    margin-top: -1px;
+    overflow: hidden;
+    position: relative;
+    right: -1px;
+    top: 100%;
+    margin-right: -16px;
+}
+.type .dropdown{
+    width:128px;
+}
+#detailcontactform .dropdown,
+.login-form .dropdown{
+    color:#a7a9ac;
+    box-shadow: 1px 1px 1px #d1cac5 inset;
+    border:none;
+    background: none repeat scroll 0 0 #fdf2ea;
+    width:260px;
+    margin-left:0;
+    padding:12px;
+}
+#detailcontactform .dropdown ul,
+.login-form .dropdown ul{
+    overflow: hidden;
+}
+#detailcontactform .dropdown div{
+    background: none repeat scroll 0 0 #fdf2ea;
+    position: absolute;
+    margin-right:0;
+}
+.login-form .dropdown div{
+    background: none repeat scroll 0 0 #fdf2ea;
+    position: absolute;
+    margin-right:0;
+}
+#detailcontactform .dropdown li.focus,
+.login-form .dropdown li.focus {
+	background: #A9A9A9;
+	position: relative;
+	z-index: 3;
+	color: #fff;
+}
+.sort-by-form .dropdown{
+    width:320px;
+    font-size:15px;
+    height:32px;
+    padding:10px;
+    font-weight:100;
+}
+.qty-form form{
+    height:54px;
+}
+.qty-form .dropdown{
+    width:80px;
+    font-size:15px;
+    height:32px;
+    padding:10px;
+    font-weight:100;
+}
+.qty-form .dropdown div,
+.sort-by-form .dropdown div{
+    margin-right:0;
+    position: absolute;
+}
+.result .qty-form .bottom.dropdown,
+.result .sort-by-form .bottom.dropdown{
+    overflow: visible;
+}
+
+.qty-form .dropdown li.focus,
+.sort-by-form .dropdown li.focus{
+	background: #A9A9A9;
+	position: relative;
+	z-index: 3;
+	color: #fff;
+}
+#detailcontactform .dropdown{
+    background: none repeat scroll 0 0 #fdf2ea;
+    width:273px;
+    margin:0;
+}
+.result div.agent-reult{
+    position: inherit;
+}
+.left_float{
+    float:left;
+    width:100px;
+    height: 23px;
+}
+#contactform .sbHolder{
+    background: none repeat scroll 0 0 #fdf2ea;
+    float: left;
+    font-size: 15px;
+    height: 53px;
+    position:absolute;
+    width:285px;
+}
+#contactform .sbToggle:hover,
+#contactform .sbToggle{
+    background:url("/static/images/bg-select.png") no-repeat scroll 100% -99px rgba(0, 0, 0, 0);
+    height:53px;
+    width:38px;
+}
+#contactform .sbSelector{
+    height:53px;
+    line-height:53px;
+}
+#contactform .sbOptions{
+    width:284px;
+    min-height:165px;
+}
+
+.ui-menu-item {
+    cursor:pointer;
+}

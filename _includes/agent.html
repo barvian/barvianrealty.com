@@ -1,0 +1,69 @@
+{% assign agent = site.agents | where: 'slug', include.agent | first %}
+{% if agent and include.layout == 'full' or agent and include.layout == 'profile' %}
+{% capture contact %}
+  <ul class="agent-contact">
+    <li><img src="/static/images/phone.png" alt="" />{{ agent.phone }}</li>
+    <li>
+      <img src="/static/images/email.png" alt="" />
+      <a href="mailto:{{ agent.email }}" class="btn btn-primary">Email me</a>
+    </li>
+    {% if agent.website %}
+    <li>
+      <img src="/static/images/website.png" alt="" />
+      <a href="{{ agent.website }}" target="_blank" class="btn btn-primary">Visit my website</a>
+    </li>
+    {% endif %}
+  </ul>
+{% endcapture %}
+<div class="agent media {{include.class}}">
+  <a href="{{ agent.url }}" class="mr-3 w-25">
+    <img src="{{ agent.headshot }}" alt="image" class="agent" />
+  </a>
+  <div class="agent-about media-body row">
+    <div class="{% if include.layout == 'full' %}col-md-8{% else %}col-md-6{% endif %}">
+      <h1 class="h4"><a href="{{ agent.url }}">{{ agent.name }}</a></h1>
+      <h2 class="h5 mb-3">{{ agent.role }}</h2>
+      {% if include.layout == 'full' and agent.tagline %}
+      <p class="agent-tagline">"{{ agent.tagline }}"</p>
+      {% endif %}
+      {% if include.layout == 'full' %}
+      <div class="buttons mb-3">
+        <a href="{{ agent.url }}" class="btn btn-primary" role="button">View profile</a>
+      </div>
+      {% else %}
+      {{contact}}
+      {% endif %}
+    </div>
+    {% if include.layout == 'full' %}
+    <div class="col-md-4">
+      {{contact}}
+    </div>
+    {% else %}
+    <div class="col-md-6">
+      {% if agent.specialties %}
+      <h6>Specialty</h6>
+      <p>{{ agent.specialties | join: ', ' }}</p>
+      {% endif %}
+      {% if agent.certifications %}
+      <h6>Certifications</h6>
+      <p>{{ agent.certifications | join: ', ' }}</p>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% elsif agent %}
+<figure class="agent agent-compact media {{include.class}}">
+  <a class="mr-3" href="{{ agent.url }}">
+    <img width="90" src="{{ agent.headshot }}" alt="Agent headshot" />
+  </a>
+  <figcaption class="media-body">
+    <span class="h5">{{ agent.name }}</span><br />
+    <span class="role">{{ agent.role }}</span><br />
+    <div class="agent-phone mb-2">
+      <img src="/static/images/phone.png" alt="Phone number" /> {{ agent.phone }}
+    </div>
+    <a class="btn btn-primary" href="{{ agent.url }}" role="button">View profile</a>
+  </figcaption>
+</figure>
+{% endif %}

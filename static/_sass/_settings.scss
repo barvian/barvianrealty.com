@@ -1,0 +1,41 @@
+$h1-font-size: 1.55rem;
+
+// Grid
+
+$container-max-widths: (
+  lg: 960px,
+  xl: 960px
+);
+
+// Fonts
+
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+
+// Links
+
+$link-hover-decoration: none;
+
+// Colors
+
+$enable-gradients: false;
+
+$red: #FF2A12;
+$blue: #0F5597;
+
+// Navbars
+
+$navbar-dark-color: #fff;
+$navbar-nav-link-padding-x: 1.5rem;
+$navbar-padding-y: 0.25rem;
+
+// Navs
+
+$nav-link-padding-y: 0.25rem;
+
+// Carousels
+
+$carousel-control-width: 7%;
+
+// List groups
+
+$list-group-item-padding-y: 1.5rem;

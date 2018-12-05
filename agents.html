@@ -1,0 +1,13 @@
+---
+layout: one_col
+title: Our Agents
+---
+
+<h1>Our agents</h1>
+<ul class="list-group list-group-flush js-agent-list">
+  {% for agent in site.agents %}
+    <li class="list-group-item">
+      {% include agent.html agent=agent.slug layout='full' %}
+    </li>
+  {% endfor %}
+</ul>

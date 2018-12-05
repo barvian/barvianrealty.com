@@ -1,0 +1,138 @@
+.detail_agent{
+    height:250px;
+    margin: 25px auto 10px;
+    color:black;
+    background: none repeat scroll 0 0 #F1EFEB;
+}
+.agent_image{
+    float:left;
+    overflow:hidden;
+    width:223px;
+}
+.agent_image img{
+    width:auto;
+    height:250px;
+}
+.agent_main{
+    float:left;
+    width:334px;
+    margin-left: 55px;
+}
+.agent_main h3{
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+.agent_main strong{
+    font-size:13px;
+}
+.agent_main a{
+    font-size: 13px;
+    color: #C58846;
+    text-decoration: underline;
+}
+.visit_site{
+    margin-left: 4px;
+}
+.agent_main ul li a{
+    font-size: 13px;
+    color: #C58846;
+    font-weight:lighter;
+    text-decoration: underline;
+}
+.agent_main ul{
+    list-style-type:none;
+    padding: 0;
+}
+.agent_main ul li{
+    margin-bottom: 10px;
+}
+.agent_main ul li img{
+    max-width:25px;
+    margin-right: 25px;
+}
+.agent_phone{
+   color:#6D6E71;
+   font-size: 15px;
+}
+.line {
+    width: 1px;
+    height:220px;
+    background: #BABABA;
+    float:left;
+    margin-left: 0px;
+    margin-top: 15px;
+    vertical-align:middle;
+
+}
+.agent_other{
+    float:left;
+    margin-left: 10px;
+}
+#main .agent_other h2{
+    font-size: 14px;
+}
+.agent_other h4{
+    margin-top: 27px;
+    margin-bottom: 0px;
+}
+.agent_other p{
+    font-size: 13px;
+    margin: -10px;
+    margin-left: 0px;
+    color: #6D6E71;
+}
+.agent_other ul{
+    list-style-type:none;
+    padding: 0;
+}
+.agent_other ul li{
+    margin-bottom: 6px;
+}
+.agent_other a{
+    font-size: 13px;
+    color: #C58846;
+    width:240px;
+    text-decoration: underline;
+}
+.agent_other ul li a{
+    font-size: 13px;
+    color: #C58846;
+    text-decoration: underline;
+}
+.specialty {
+    padding-top: 4px;
+}
+.specialty p{
+    width: 314px;
+}
+.agent_background{
+}
+.agent_background_info{
+    margin-top: 7px;
+}
+.agent_background_info span{
+    color: #6D6E71;
+    padding-bottom: 11px;
+}
+.my_listing{
+    float:right;
+    margin-top: -36px;
+}
+#main h3{
+    width: 252px;
+    height: 24px;
+    overflow: hidden;
+}
+.agent_main .right_button {
+    height: 31px;
+    padding: 5px 11px 5px 11px;
+    width: auto;
+}
+.agent_main ul li a {
+	float: inherit;
+    color: #FFFFFF;
+}
+.certifications p{
+    padding-bottom: 3px;
+}
+

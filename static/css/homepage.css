@@ -1,0 +1,107 @@
+.list-home .img .property_img {
+width: 280px;
+height: 250px;
+overflow:hidden;
+}
+.list-home .img .property_img img.wide {
+    height: 100%;
+    width:auto;
+}
+.list-home .img .property_img img.tall {
+    width: 100%;
+    height:auto;
+}
+ul.bjqs-controls.v-centered li.bjqs-next a{
+    right:-34px;
+    text-indent:-9999px;
+    width: 34px;
+    height: 38px;
+    background:url("/static/images/homepage_right_arrow.png") no-repeat scroll 0 0 transparent;
+}
+ul.bjqs-controls.v-centered li.bjqs-prev a{
+    left:-32px;
+    text-indent:-9999px;
+    width: 34px;
+    height: 38px;
+    background:url("/static/images/homepage_left_arrow.png") no-repeat scroll 0 0 transparent;
+}
+
+#testimonials-fade ul.bjqs-controls.v-centered li.bjqs-next a{
+    right:0;
+}
+
+#testimonials-fade ul.bjqs-controls.v-centered li.bjqs-prev a{
+    left:0;
+}
+
+.gallery-frame {
+    overflow: visible;
+}
+.gallery-frame .btn.long {
+    width: 294px;
+}
+
+.gallery .gallery-holder .banners {
+    height: 463px;
+    left:-69px;
+    overflow: hidden;
+    position: absolute;
+    width: 1102px;
+}
+.gallery .gallery-holder .banners img.left-banner{
+    float:left;
+}
+.gallery .gallery-holder .banners img.right-banner{
+    float:right;
+}
+
+#main h3{
+    width: 252px;
+    height: 24px;
+    overflow: hidden;
+}
+.community_search_address img{
+    width: 281px;
+    height: 251px;
+}
+.agent_details_back{
+    float: right;
+}
+.agent_details_back a img{
+    width:19px;
+    height:23px;
+}
+.agent_details_back span{
+    color:#BABABA;
+}
+#main .small_banner{
+    float:right;
+    margin-top: -9px;
+    margin-right: 43px;
+    font-family: 'Noto Sans',sans-serif;
+    font-size: 23px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 53px;
+    height:56px;
+}
+#main .small_banner img{
+    height: auto;
+    max-height: 70px;
+    width:188px;
+}
+.list-home{
+    margin-top: 15px;
+    min-width:1015px;
+}
+#main .small_banner strong{
+    font-weight: 700;
+    font-size: 6pt;
+}
+
+.featured_homes_blank{
+    height: 477px;
+}
+

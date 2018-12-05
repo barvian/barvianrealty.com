@@ -1,0 +1,39 @@
+# Barvian Realty
+# ==============
+
+url: http://barvianrealty.com
+
+social:
+  facebook: https://www.facebook.com/barvianrealty
+
+sass:
+    sass_dir: static
+    style: compressed
+
+# Collections
+# -----------
+
+collections:
+  agents:
+    output: true
+
+# Defaults
+# --------
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "agents"
+    values:
+      layout: "agent"
+
+# Build settings
+# --------------
+
+exclude:
+  - CNAME
+  - static/bootstrap/site
+
+permalink: pretty
+

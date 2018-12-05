@@ -1,0 +1,87 @@
+// Navbar
+
+.navbar-nav .nav-link {
+  font-size: 1.333rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+// Nav
+
+.nav {
+  margin-left: $nav-link-padding-x * -1;
+}
+
+// Social-nav
+
+.social-nav img {
+  width: 33px;
+}
+
+// Site header
+
+.site-header {
+  padding: 0.5rem 0;
+}
+
+.logo {
+  max-height: 80px;
+}
+
+// Site footer
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-footer {
+  background-color: #f1efeb;
+  padding: 2rem 0 1rem;
+  margin-top: auto;
+}
+
+// Carousel
+
+.carousel-caption {
+  align-items: flex-start;
+  display: flex;
+  left: 8%;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: left;
+  top: 20px;
+  right: auto;
+  max-width: 512px;
+
+  &-heading {
+    color: $primary;
+    display: inline-block;
+    background: $white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 0.333em 0.5em;
+  }
+
+  p {
+    font-size: 1.333rem;
+    text-shadow: 0 1px 1px #121509;
+  }
+}
+
+// Agent
+
+.agent-contact {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+
+  > * > img {
+    margin-right: $spacer;
+  }
+
+  > * + * {
+    margin-top: $spacer * 0.5;
+  }
+}
