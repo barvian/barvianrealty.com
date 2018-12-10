@@ -1,19 +1,19 @@
-<header class="site-header">
+<div class="site-header"> {% comment %} `header` element screws up IDX... {% endcomment %}
   <div class="container d-flex justify-content-between align-items-center">
     <a href="/">
       <img class="logo" src="/static/images/logo.png">
     </a>
 
     <div class="text-right">
-      <a href="tel:8155568078">
-        <strong>CALL US <span>(815) 556-8078</span></strong>
+      <a href="tel:{{ site.tel }}">
+        <strong>CALL US <span>{{ site.phone }}</span></strong>
       </a><br />
-      <a href="mailto:support@barvianrealty.com?subject=Website%20Inquiry">
-        support@Barvianrealty.com
+      <a href="mailto:{{ site.mailto }}">
+        {{ site.email }}
       </a>
       <nav class="social-nav">
         <a href="https://www.facebook.com/barvianrealty"><img src="/static/images/social_facebook.png"></a>
       </nav>
     </div>
   </div>
-</header>
+</div>

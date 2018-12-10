@@ -23,10 +23,10 @@
           <strong>24030 W. Lockport St<br/>Plainfield, IL 60544</strong>
         </address>
         <div class="phone">
-          <a href="tel:8155568078">
-            <strong>CALL US</strong> <span>(815) 556-8078</span>
+          <a href="tel:{{ site.tel }}">
+            <strong>CALL US</strong> <span>{{ site.phone }}</span>
           </a><br />
-          <a href="mailto:support@Barvianrealty.com?subject=Website%20Inquiry">support@Barvianrealty.com</a>
+          <a href="mailto:{{ site.mailto }}">{{ site.email }}</a>
         </div>
 
       </div>
@@ -35,7 +35,7 @@
     <div class="d-flex justify-content-between">
       <div>
         <nav class="nav">
-          <a href="mailto:support@barvianrealty.com?subject=Website%20Inquiry" class="nav-link">Contact Us</a></li>
+          <a href="mailto:{{ site.mailto }}" class="nav-link">Contact Us</a></li>
           <a href="/privacy" class="nav-link">Privacy</a>
         </nav>
         <p>© 2018 Barvian Realty, All Rights Reserved.</p>
