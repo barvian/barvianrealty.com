@@ -7,9 +7,10 @@ layout: one_col
     {{content}}
   </div>
   <aside class="col-lg-4">
-    <div class="js-agent-list">
-      {% include agent.html agent='bertha' layout='compact' %}
-      {% include agent.html agent='tammy' layout='compact' %}
+    <div class="js-agent-list" data-limit="2">
+      {% for agent in site.agents %}
+        {% include agent.html agent=agent layout='compact' %}
+      {% endfor %}
     </div>
     <a href="http://www.afmsi.com/" target="_blank">
       <img src="/static/images/prequalify-square.jpg" border="0" style="display: inline;"></a>

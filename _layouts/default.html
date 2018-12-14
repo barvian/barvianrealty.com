@@ -18,8 +18,13 @@
     const agents = document.getElementsByClassName('js-agent-list')
     for (let l = 0; l < agents.length; l++) {
       const agentList = agents[l]
-      for (let i = agentList.children.length; i >= 0; i--) {
-        agentList.appendChild(agentList.children[Math.random() * i | 0])
+      const length = agentList.children.length
+      const end = length - 1
+      const limit = agentList.dataset.limit == null ? length :
+        parseInt(agentList.dataset.limit, 10)
+      for (let i = end; i >= 0; i--) {
+        if (end - i >= limit) agentList.removeChild(agentList.children[i])
+        else agentList.appendChild(agentList.children[Math.random() * i | 0])
       }
     }
   </script>

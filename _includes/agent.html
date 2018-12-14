@@ -1,4 +1,4 @@
-{% assign agent = site.agents | where: 'slug', include.agent | first %}
+{% assign agent = include.agent %}
 {% if agent and include.layout == 'full' or agent and include.layout == 'profile' %}
 {% capture contact %}
   <ul class="agent-contact">
