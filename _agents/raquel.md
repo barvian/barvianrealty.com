@@ -4,6 +4,7 @@ headshot: /static/images/agents/raquel.jpg
 role: Broker
 phone: (630) 207-9566
 email: buyandsellwithraquelgoggin@gmail.com
+website: http://buyandsellwithraquelgoggin.com/
 ---
 
 I specialize in residential real estate in traditional sales, short sales, foreclosures, investment properties, and new construction. In every sale, I make it personal because I know that it’s not just a house, it’s your home.
