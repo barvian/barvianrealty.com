@@ -6,9 +6,22 @@ layout: one_col
 
 {% assign stripped_content = content | strip %}
 {% if stripped_content.size != 0 %}
-  <h1>My background</h1>
-  <hr />
+  <h1 class="bordered-title">My background</h1>
   {{content}}
+  {% if page.testimonials %}
+  <h2 class="h1 bordered-title mt-5">Testimonials</h2>
+  <div id="testimonials" class="carousel slide carousel-fade mb-5" data-interval="10000" data-pause="hover" data-ride="carousel">
+    <div class="carousel-inner">
+      {% for testimonial in page.testimonials %}
+      <div class="carousel-item{% if forloop.first %} active{% endif %}">
+        <blockquote>
+          <p>"{{ testimonial }}"</p>
+        </blockquote>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
 {% endif %}
 
 
