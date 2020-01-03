@@ -4,7 +4,6 @@ headshot: /static/images/agents/nancy.jpg
 role: Broker
 phone: (815) 302-7900
 email: nancy@barvianrealty.com
-website: http://callnancygibson.com/
 testimonials:
   - "Our experience was wonderful and so much fun!  Nancy made the home buying experience easy, fun, and stress free! I feel I have truly gained a friend not just an awesome realtor!! I can think of a million more things to say about how awesome she is!"
   - "I would strongly recommend Nancy Gibson of Barvian Realty to anyone interested in purchasing a home. My experience with Nancy, from initial conversation regarding my unique and changing wants, to the final closing was a very satisfying journey. Nancy was accommodating to my requests and displayed a keen assessment and follow-through in regard to the homes on my “want to see list”. From the time we put an offer in, to the closing, she kept me informed of my status and my “to do list”.  Nancy Gibson is a caring, concerned and extremely knowledgeable person who I was fortunate to have as my agent. I would strongly recommend Nancy to serve your real estate needs."
